@@ -11,3 +11,17 @@ export const Success = () => <Button variant='success'>Success</Button>
 export const Danger = () => <Button variant='danger'>Danger</Button>
 export const Small = () => <Button variant='small'>Small</Button>
 export const Large = () => <Button variant='large'>Large</Button>
+
+const Template = args => <Button {...args} />
+
+export const PrimaryA = Template.bind({});
+PrimaryA.args = {
+    variant: 'primary',
+    children: 'Primary Args'
+}
+
+export const SecondaryA = Template.bind({});
+SecondaryA.args = {
+    variant: 'secondary',
+    children: 'Secondary Args'
+}
