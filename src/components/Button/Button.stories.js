@@ -20,6 +20,12 @@ PrimaryA.args = {
     children: 'Primary Args'
 }
 
+export const LongPrimaryA = Template.bind({});
+LongPrimaryA.args = {
+    ...PrimaryA.args,
+    children: 'Long Primary Args'
+}
+
 export const SecondaryA = Template.bind({});
 SecondaryA.args = {
     variant: 'secondary',
